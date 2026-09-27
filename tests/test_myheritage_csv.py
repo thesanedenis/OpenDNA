@@ -79,8 +79,8 @@ class TestMyHeritageCsvParsing:
         assert result.genotypes["rs1801133"] == "CT"
         assert result.genotypes["rs4680"] == "GG"
         assert result.genotypes["rs6265"] == "TT"
-        assert result.genotypes["rs3131972"] == "GA"
-        assert result.genotypes["rs200599638"] == "GG"
+        assert result.genotypes["rs9000001"] == "GA"
+        assert result.genotypes["rs9000002"] == "GG"
 
     def test_chromosome_labels_extracted(self, fixtures_dir: Path) -> None:
         result = parse_source_file(fixtures_dir / "myheritage_sample.csv")
@@ -198,8 +198,8 @@ class TestAnalyzerWithMyHeritageData:
         assert hit.tier == "normal"
 
     def test_generic_snps_not_matched_in_panels(self, findings) -> None:
-        """rs3131972 and rs200599638 are not in any panel — not_tested expected."""
-        for rsid in ("rs3131972", "rs200599638"):
+        """rs9000001 and rs9000002 are not in any panel — not_tested expected."""
+        for rsid in ("rs9000001", "rs9000002"):
             matched = [f for f in findings if f.rsid == rsid and f.call_status == "called"]
             assert matched == [], f"{rsid} should not have a called finding in any panel"
 
