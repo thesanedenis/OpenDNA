@@ -1,0 +1,21 @@
+##fileformat=MyHeritage
+##format=MHv1.0
+##method=Low-pass Whole Genome Sequencing
+##timestamp=2026-09-27 07:11:16 UTC
+##reference=build37
+#
+# MyHeritage DNA raw data.
+# For each SNP, we provide the identifier, chromosome number, base pair position and genotype.
+# The genotype is reported on the forward (+) strand with respect to the human reference build 37.
+# THIS INFORMATION IS FOR YOUR PERSONAL USE AND IS INTENDED FOR GENEALOGICAL RESEARCH
+# ONLY. IT IS NOT INTENDED FOR MEDICAL OR HEALTH PURPOSES. PLEASE BE AWARE THAT THE
+# DOWNLOADED DATA WILL NO LONGER BE PROTECTED BY OUR SECURITY MEASURES.
+RSID,CHROMOSOME,POSITION,RESULT
+"rs3131972","1","752721","GA"
+"rs200599638","1","752918","GG"
+"rs1801133","1","11856378","CT"
+"rs4680","22","19951271","GG"
+"rs6265","11","27679916","TT"
+"rs429358","19","45411941","TT"
+"rs7412","19","45412079","CC"
+"rs1815739","11","66560624","CT"
